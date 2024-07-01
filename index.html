@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <!--Icono-->
+    <link rel="icon" type="image/png" href="imagenes/madrid.png"/>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css"/>
+
+    <!--JS-->
+
+    <!--Enlaces Externos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384">
+    <script src="https://kit.fontawesome.com/e3d46192fc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navegador">
+        <div class="menu_toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre_mi">Sobre Mí</a></li>
+                <li><a href="#conocimientos">Conocimientos</a></li>
+                <li><a href="#mis_estudios">Estudios</a></li>
+                <li><a href="#experiencia_laboral">Experiencia laboral</a></li>
+                <li><a href="#cursos">Cursos y Certificados</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+    <!--¿Quién soy?-->
+    <div class="inicio" id="inicio">
+        <section class="presentacion">
+                <div class="image-presentacion">
+                    <img src="imagenes/yo.jpg" class="imagen-mia">
+                  </div>                  
+                <div class="parrafo+h3">
+                    <h1>Antonio Perales Calero</h1>
+                    <h2>Estudiante de ingeniería informática - Técnico en Sistemas Operativos en Red</h2>
+                    
+            <hr> 
+            </div>
+            <div class="iconos">
+                    <a href="documentos/CV_AntonioPerales.pdf"" class="facebook"><i class="fa-regular fa-address-book"></i></a>
+                    <a href="https://github.com/Perales33/Mio.git" class="twitter"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/antonio-p-968647277" class="linkedin"><i class="fab fa-linkedin-in" id="sobre_mi"></i></a>
+            </div>
+        </section>
+    </div>
+        <section class="descripcion" >
+            <div class="about_me">
+            <h3 class="h3">Sobre mí:</h3>
+                <p id="conocimientos">Durante estos dos últimos años he estado estudiando en la Universidad Europea de Madrid,donde con mucho esfuerzo y dedicación he conocido diferentes conocimientos sobre la gestión de redes y múltiples servicios fundamentales como han podido ser LDAP, VPN (Wireguard y OpenVPN) o DNS, entre otros.Además, de tener conocimientos en sistemas operativos como son Linux, Windows y Proxmox y en desarrollo web con HTML, CSS, JavaScript y PHP.<br><br>
+                He terminado mis estudios en "Bachillerato de Ciencias" y "Administración de Sistemas Operativos en Red", teniendo en cuenta que desde un inicio me quería trazar por el mundo de las ciencias e ingenierías, hasta que descubrí que la tecnología era mi pasión. Gracias a la base tomada estos dos años, he decido empezar el grado en ingeniería informática en la Universidad Europea y así poder ampliar mis conocimientos.<br><br>
+                Soy una persona que se compromete al 100% con el aprendizaje y que busca una continua evolución en el desarrollo tanto personal como profesional, llevándome a conseguir grandes logros y desafíos mayores.</p>
+            </div>    
+            <div class="gustos">
+                <div class="columna-gustos">
+                    <h3 class="h3">Intereses:</h3>
+                    <div class="contenedor-gustos">
+                    <div class="gusto">
+                        <i class="fa fa-basketball-ball"></i>
+                        <span>Baloncesto</span>
+                    </div>
+                    <div class="gusto">
+                        <i class="fa-brands fa-spotify"></i>
+                        <span>Música</span>
+                    </div>
+                    <div class="gusto">
+                        <i class="fa fa-plane"></i>
+                        <span>Viajar</span>
+                    </div>
+                    <div class="gusto">
+                        <i class="fa-brands fa-steam-symbol"></i>
+                        <span>Videojuegos</span>
+                    </div>
+                    <div class="gusto">
+                        <i class="fa-brands fa-rebel"></i>                            
+                        <span>Star Wars</span>
+                    </div>
+                    <div class="gusto">
+                        <i class="fa-solid fa-dragon"></i>
+                        <span>Dragon Ball</span>
+                    </div>
+                    <div class="gusto">
+                        <i class="fa-brands fa-windows"></i>
+                        <span>Windows</span>
+                    </div>
+                    <div class="gusto">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>Youtube</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!--Conocimientos-->
+        <section class="conocimientos" id="conocimientos">
+            <h3 class="h3">Conocimientos:</h3>
+                <ul>
+                    <li><span class="boton" onclick="abrir_modal('modal1')">Sistemas Operativos y Virtualización</span></li>
+                    <li><span class="boton" onclick="abrir_modal('modal2')">Microservicios</span></li>
+                    <li><span class="boton" onclick="abrir_modal('modal3')" id="mis_estudios">Diseño de páginas web</span></li>
+                </ul>
+        </section>
+
+        <div id="en_negro" class="en_negro" onclick="cerrar_modal()"></div>
+
+        <!--Modal de conocimientos-->
+        <dialog class="modal" id="modal1">
+            <h2>Sistemas Operativos y Virtualización</h2>
+                <p>
+                    <ul>
+                        <li>Ubuntu (Desktop y Server)</li>
+                        <li>Windows (Server y 10/11/7)</li>
+                        <li>Proxmox</li>
+                        <li>LXC</li>
+                        <li>VMware Workstation</li>
+                        <li>Oracle VM VirtualBox</li>
+                        <li>Docker</li>
+                    </ul>
+                </p>
+            <button onclick="cerrar_modal()">Cerrar</button>
+        </dialog>
+        <dialog class="modal" id="modal2">
+            <h2>Microservicios</h2>
+                <p>
+                    <ul>
+                        <li>DNS con Bind9</li>
+                        <li>DHCP</li>
+                        <li>Apache2 y Nginx</li>
+                        <li>VPN con Wireguard y OpenVPN</li>
+                        <li>Proxy</li>
+                        <li>LDAP y AD DC</li>
+                        <li>Rsyslog</li>
+                        <li>Siem</li>
+                        <li>Certificados con OpenSSL</li>
+                        <li>MySQL</li>
+                    </ul>
+                </p>
+            <button onclick="cerrar_modal()">Cerrar</button>
+        </dialog>
+        <dialog class="modal" id="modal3">
+            <h2>Diseñado páginas web</h2>
+                <p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>MariaDB</li>
+                        <li>Wordpress</li>
+                        <li>Git</li>
+                    </ul>
+                </p>
+            <button onclick="cerrar_modal()">Cerrar</button>
+        </dialog>
+
+        <!--Estudios y experiencia laboral-->
+        <div class="estudios">
+            <h3 class="h3">Mis estudios </h3>
+                <div class="estudios_previos">
+                    <div class="e1">
+                        <img src="imagenes/c2.jpg" draggable="false">
+                        <p>Grado de ingeniería informática <br><br>Octubre 2024 - Actualidad<br>Universidad Europea, Madrid (Villaviciosa de Odón)</p> 
+                    </div>
+                    
+                    <div class="e2">
+                        <img src="imagenes/c2.jpg" draggable="false">
+                        <p>Técnico superior en Administración de Sistemas Operativos en Red<br><br>Septiembre 2022 - Junio 2024<br>Universidad Europea, Madrid (Alcobendas)</p>
+                    </div>
+                    
+                    <div class="e3">
+                        <img src="imagenes/c5.jpeg" draggable="false">
+                        <p id="experiencia_laboral">Bachillerato de Ciencias<br><br>Septiembre 2020 - Junio 2022<br>I.E.S. Miguel de Cervantes, Madrid (Daganzo de Arriba)</p>
+                    </div>
+                </div>
+        </div>
+        <div class="experiencia">
+            <h3 class="h3">Mi experiencia laboral </h3>
+                <div class="experiencia_previa">
+                    <div class="ex1">
+                        <img src="imagenes/c6.jpg" draggable="false">
+                        <p>Estudiante en prácticas <br> Ilunion IT Services | ServiceDesk<br>02/04/2024 - 13/06/2024<br><br>Tareas:
+                            <ul>
+                                <li>Atención al cliente y resolución de problemas.</li>
+                                <li>Instalación de licencias de Office/Norton.</li>
+                                <li>Comprobación de logs y monitorización de sistemas.</li>
+                                <li>Instalación firmware/drivers de dispositivos.</li>
+                                <li id="cursos">Rellenar base de datos con partes de técnicos.</li>
+                            </ul> 
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <!--Cursos y certificados-->
+        <div class="cursos">
+            <h3 class="h3">Cursos y Certificados</h3>
+                <div class="SKFA">
+                    <h4>Cisco Skills for All</h4>
+                        <div class="galeria">
+                            <a href="documentos/Introduction_to_Cybersecurity_Badge20230925-28-rm1xb9.pdf"><img src="imagenes/introduction-to-cybersecurity.png"></a>
+                            <a href="documentos/Introduction_to_Data_Science_Badge20230928-39-de2emn.pdf"><img src="imagenes/introduction-to-data-science.png"></a>
+                            <a href="documentos/JavaScript_Essentials_1_Badge20230928-28-g33sf0.pdf"><img src="imagenes/javascript-essentials-1.png"></a>
+                            <a href="documentos/Operating_Systems_Basics_Badge20230928-28-8j85di.pdf"><img src="imagenes/operating-systems-basics.png"></a>
+                            <a href="documentos/Computer_Hardware_Basics_Badge20230926-36-ebsrt.pdf"><img src="imagenes/computer-hardware-basics.png"></a>
+                            <a href="documentos/English_for_IT_1_Badge20230928-44-v9y5ku.pdf"><img src="imagenes/english-for-it-1.png"></a>
+                            <a href="documentos/English_for_IT_2_Badge20230928-28-ou9mj3.pdf"><img src="imagenes/english-for-it-2.png"></a>
+                        </div>
+                </div>
+        
+                <div class="cbm">
+                    <h4>Cisco Networking Academy</h4>
+                        <div class="curso-MC">
+                            <p> Introducción a la Seguridad Cibernética <br><br> Cisco Networking Academy - 19/11/2023</p>
+                            <div class="redessociales">
+                                <ul>
+                                    <li><a href="documentos/AntonioPerales-Introducción a l-certificate (1).pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="curso-MC">
+                            <p>JavaScript Essentials 1 (JSE) <br><br>JavaScript Institude (Cisco Networking Academy) - 27/12/2023</p>
+                            <div class="redessociales">
+                                <ul>
+                                    <li><a href="documentos/AntonioPerales-Curso básico de -certificate.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="curso-MC">
+                            <p> Cybersecurity Essentials <br><br>Cisco Networking Academy - 31/12/2023</p>
+                            <div class="redessociales">
+                                <ul>
+                                    <li><a href="documentos/AntonioPerales-Continuación a l-certificate.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                </ul>
+                            </div>
+                        </div>
+            
+                        <div class="curso-MC">
+                            <p>NDG Linux Essentials <br><br> NGD (Cisco Networking Academy) - 28/06/2024</p>
+                            <div class="redessociales">
+                                <ul>
+                                    <li><a href="documentos/AntonioPerales-NDG Linux Essent-certificate.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                </ul>
+                            </div>
+                        </div>
+            </div>
+        
+            <div class="cbm">
+                <h4>Microsoft Learn</h4>
+                    <div class="curso-MC">
+                        <p> Implementación, configuración y administración de Windows Server <br><br>Microsoft Learn - 26/09/2023</p>
+                        <div class="redessociales">
+                            <ul>
+                                <li><a href="documentos/Logros - antonioperales-9962 _ Microsoft Learn.PDF" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        
+            <div class="cbm">    
+                <h4>Backtrack Academy</h4>
+                <div class="curso-MC">
+                    <p>Explotación de Vulnerabilidades <br><br> Backtrack Academy - 04/01/2023</p>
+                    <div class="redessociales">
+                        <ul>
+                            <li id="proyectos"><a href="documentos/pdf_exam.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div class="proyectos">
+            <h3 class="h3">Mis proyectos</h3>
+                <div class="cartas">
+                    <div class="contorno1">
+                        <div class="carta">
+                            <div class="medio">
+                                <div class="cara1"></div>
+                                <div class="cara2">
+                                    <h4>Cartas Giratorias</h4>
+                                        <h5>¿Qué es?</h5>
+                                            <p>Proyecto para subir nota en la Asignatura de Implantación de Aplicaciones Web de 2º de Administración de Sistemas Operativos en Red</p>
+                                    <h5>¿Por qué nace el proyecto?</h5>
+                                        <p>Mezclando dos ideas, el juego y una de mis pasiones, nació el juego llamado Cartas Giratorias, donde la idea es encontrar la pareja de cada carta para obtener la victoria.</p>
+                                            <div class="redessociales">
+                                                <ul>
+                                                    <li><a href="https://github.com/Perales33/Mio.git" class="twitter"><i class="fab fa-github"></i></a></li>
+                                                </ul>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contorno2">
+                        <div class="carta">
+                            <div class="medio">
+                                <div class="cara1" style="background-image: url(imagenes/logo.png);" draggable="false"></div>
+                                <div class="cara2">
+                                    <h4>ElHamiti News:</h4>
+                                        <h5>¿Qué es?</h5>
+                                            <p>Proyecto creado para las asignaturas de Implantación de Aplicaciones Web y Administración de Sistemas Gestores de Base de Datos en 2º de Administración de Sistemas Operativos en Red</p>
+                                        <h5>¿Por qué nace el proyecto?</h5>
+                                            <p>La empresa ElHamiti News tiene como objetivo proporcionar servicios informativos en el ámbito de la informática, abarcando áreas como la ciberseguridad, el hardware, la programación y la inteligencia artificial, entre otras, dirigidos al público interesado.</p>
+                                        <h5>Colaboradores:</h5>
+                                            <p> <a href="https://www.linkedin.com/in/felipegim%C3%A9nezmart%C3%ADnez/">Felipe Giménez Martínez</a><br> <a href="https://www.linkedin.com/in/diego-alfonso-chicoma-iba%C3%B1ez-5721ba228/">Diego Alfonso Chicoma Ibáñez</a><br><a href="https://www.linkedin.com/in/jos%C3%ADas-gonz%C3%A1lez-rubio-31306a272/">Josías González Rubio</a></p>
+                                                <div class="redessociales">
+                                                    <ul>
+                                                        <li><a href="documentos/Grupo05_Memoria_ElHamitiNews.pdf" class="download"><i class="fa fa-file-download"></i></a></li>
+                                                        <li><a href="https://github.com/Perales33/Mio.git" class="twitter"><i class="fab fa-github"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contorno3">
+                        <div class="carta">
+                            <div class="medio">
+                                <div class="cara1" style="background-image: url(imagenes/be_healthy.png);" draggable="false"></div>
+                                <div class="cara2">
+                                    <h4>Be Healthy:</h4>
+                                        <h5>¿Qué es?</h5>
+                                            <p>Proyecto creado para la asignatura de Lenguaje de Marcas en 1º de Administración de Sistemas Operativos en Red</p>
+                                        <h5>¿Por qué nace el proyecto?</h5>
+                                            <p>Día a día, muchas personas piensan sobre la posibilidades que tiene todo el mundo healthy, sin embargo, pocas son las personas que realmente llevan a cabo este tipo de vida.<br><br> Esto ocurre porque esto lleva un gran sacrificio a nivel tanto físico como mental. Por lo que en esta marca contamos con diferentes métodos cientificos y formularios para poder llevar a cabo tu vida healthy.</p>
+                                                <div class="redessociales">
+                                                    <ul>
+                                                        <li><a href="https://github.com/Perales33/Mio.git" class="twitter"><i class="fab fa-github"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="contorno4">
+                        <div class="carta">
+                            <div class="medio">
+                                <div class="cara1" style="background-image: url(imagenes/Hospital.png);" draggable="false"></div>
+                                <div class="cara2">
+                                    <h4>Hospital Felipe:</h4>
+                                        <h5>¿Qué es?</h5>
+                                            <p>Proyecto creado para las asignaturas de Implantación de Aplicaciones Web y Administración de Sistemas Gestores de Base de Datos en 2º de Administración de Sistemas Operativos en Red</p>
+                                        <h5>¿Por qué nace el proyecto?</h5>
+                                            <p>En el Hospital se quiere mostrar su compromiso con la excelencia en el servicio, donde se puede observar en el trato en el personal administrativo hasta los médic@s y enfermer@s, trabajando con dedicación y empatía para brindar una experiencia positiva y tranquilizadora a los pacientes.
+                                        <h5>Colaboradores:</h5>
+                                            <p><a href="https://www.linkedin.com/in/ignacio-ajuria-olave-62164b235/">Ignacio Ajuria Olave</a><br><a href="https://www.linkedin.com/in/javier-ortega-mart%C3%ADnez-1b8913192/">Javier Ortega Martínez</a> <br>Álvaro Gallardo Gallardo</h5>
+                                                <div class="redessociales">
+                                                    <ul>
+                                                        <li><a href="documentos/Memoria_Hospital_FelipeVI.pdf" class="download"><i class="fa fa-file-download"></i></a></li>
+                                                        <li><a href="documentos/Memoria_Back-end_Hospital Felipe VI.pdf" class="youtube"><i class="fa fa-file-download"></i></a></li>
+                                                        <li><a href="https://github.com/Perales33/Mio.git" class="twitter"><i class="fab fa-github"></i></a></li>
+                                                    </ul>        
+                                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <!--Menú-->
+        <footer class="footer">
+            <div class="derechos">
+                <p>© 2024 - Todos los derechos reservados</p>
+            </div>
+            <div class="flecha">
+                <a href="#inicio"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+            <div class="redessociales">
+                    <ul>
+                        <li><a href="documentos/CV_AntonioPerales.pdf"" class="facebook"><i class="fa-regular fa-address-book"></i></a></li>
+                        <li><a href="https://github.com/Perales33/Mio.git" class="twitter"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/antonio-p-968647277" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>  
+            </div>
+        </footer>
+
+    <!--JS-->
+    <script src="js/index.js"></script>
+</body>
+</html>
