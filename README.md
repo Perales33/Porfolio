@@ -2,7 +2,11 @@
 
 # Español
 
+## Introducción
+
 Bienvenido al portafolio personal de Antonio Perales Calero. Este sitio web muestra el recorrido, las habilidades y los proyectos de Antonio como aspirante a ingeniero de software y especialista en sistemas de redes. Explora las diferentes secciones para conocer más sobre su formación educativa, experiencia laboral, habilidades técnicas e intereses personales.
+
+## Estructura
 
 El portafolio está estructurado en las siguientes secciones principales:
 
@@ -14,6 +18,7 @@ El portafolio está estructurado en las siguientes secciones principales:
 - Cursos y Certificados: Una galería de certificaciones de diversas instituciones como Cisco, Microsoft y Backtrack Academy.
 - Proyectos: Presenta los proyectos más importantes de Antonio, incluyendo descripciones, objetivos y enlaces a colaboradores y repositorios de proyectos.
 
+## Tecnologías implementadas
 El portafolio está construido con las siguientes tecnologías:
 
 - HTML5 y CSS3: Para la estructura y el estilo de las páginas web.
@@ -23,15 +28,19 @@ El portafolio está construido con las siguientes tecnologías:
 
 Los recursos y bibliotecas externas están incluidos mediante enlaces CDN para FontAwesome y Google Fonts.
 
-Para ver el portafolio:
 
-https://perales33.github.io/Porfolio/
+## Enlaces
 
-Para más consultas u oportunidades de colaboración, no dudes en ponerte en contacto a través de LinkedIn o explorar el repositorio de GitHub de este portafolio.
+Link porfolio web: https://perales33.github.io/Porfolio/
+Link a github: https://github.com/Perales33/Porfolio
 
 # English
 
+## Introduction
+
 Welcome to the personal portfolio of Antonio Perales Calero. This website showcases Antonio's journey, skills, and projects as an aspiring software engineer and network systems specialist. Explore various sections to learn more about his educational background, work experience, technical skills, and personal interests.
+
+## Structure
 
 The portfolio is structured into the following main sections:
 
@@ -43,6 +52,8 @@ The portfolio is structured into the following main sections:
 - Courses and Certifications: A gallery of certifications from various institutions like Cisco, Microsoft, and Backtrack Academy.
 - Projects: Showcases Antonio's significant projects, including descriptions, objectives, and links to collaborators and project repositories.
 
+## Technologies
+
 The portfolio is built with the following technologies:
 
 - HTML5 & CSS3: For the structure and styling of the web pages.
@@ -52,8 +63,7 @@ The portfolio is built with the following technologies:
 
 External resources and libraries are included via CDN links for FontAwesome and Google Fonts.
 
-To view the portfolio:
+## Links
 
-https://perales33.github.io/Porfolio/
-
-For further inquiries or collaboration opportunities, feel free to reach out through LinkedIn or explore the GitHub repository for this portfolio.
+Link porfolio web: https://perales33.github.io/Porfolio/
+Link to github: https://github.com/Perales33/Porfolio
