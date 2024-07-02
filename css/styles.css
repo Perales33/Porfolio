@@ -1,10 +1,31 @@
-/*Genérico para todas las páginas*/
-
 /* General */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*Animación de subir y bajar*/
+.descripcion, .estudios,.proyectos,.conocimientos,.cursos, .experiencia{
+    
+    view-timeline-name: --animacion;
+    view-timeline-axis: block;
+
+    animation-timeline: --animacion;
+    animation-name: mostrar;
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+@keyframes mostrar {
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
 }
 
 /* Cuerpo */
@@ -16,6 +37,7 @@ body {
 }
 
 /* Menú */
+
 .navegador {
     position: absolute;
     width: 100%;
@@ -144,13 +166,6 @@ main {
     grid-row: 2;
 }
 
-/*Main*/
-main {
-    grid-row: 2;
-}
-
-/*Página de Inicio*/
-
 /*Presentación*/
 
 .inicio{
@@ -194,6 +209,7 @@ main {
     display: block;
     box-shadow: 2px 5px 10px #000000;
 }
+
 .iconos a{
     color: #fff;
     display: inline-block;
@@ -213,17 +229,32 @@ main {
     background-color: #1CB698;
 }
 
-
 .presentacion h1 {
     grid-row:1;
-    text-align: center;
     color: #ffffff;
     text-shadow: #000000 2px 2px 5px;
-    width: 100%;
+    width: 19ch;
     padding: 0px;
     margin-top: 10px;
+    margin: auto;
     font-size: 25px;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    animation: escribir 2s steps(19), parpadear .5s infinite step-end alternate;
 }
+
+@keyframes escribir {
+    from {width: 0;}
+}
+
+@keyframes parpadear {
+    50%{
+        border-color: transparent;;
+    }
+}
+
 .presentacion h2 {
     grid-row:1;
     text-align: center;
@@ -259,16 +290,20 @@ main {
     margin-left: 10px;
     margin-right: 10px;
     text-align: justify;
+    
 }
+
 .about_me {
     grid-column: 1;
 
     padding: 20px;
     border-right: 1px #ffffff solid;
 }
+
 .descripcion h3 {
     text-align: center;
 }
+
 .descripcion p {
     color: #f2f2f2;
 }
@@ -467,6 +502,23 @@ main {
     z-index: 1;
 }
 
+@keyframes aparecer_botando {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.05);
+        opacity: 1;
+    }
+    70% {
+        transform: translate(-50%, -50%) scale(0.95);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
 /*Estudios*/
 
 .estudios{
@@ -620,9 +672,37 @@ main {
     text-align: center;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
-
-/*Página de cursos y proyectos*/
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeOver {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /*Certificados y Cursos*/
 
@@ -634,8 +714,6 @@ main {
     border-radius: 25px;
     padding:20px
 }
-
-/*Cursos*/
 
 .galeria {
     width: 85%;
@@ -763,7 +841,6 @@ main {
     }
 }
 
-
 .carta, .cara1 {
     width: 450px;
     height: 500px;
@@ -858,62 +935,6 @@ main {
 .cara2 a:hover{
     color: #0a66c2;
     text-decoration: underline;
-}
-
-
-/*Animaciones*/
-
-/*Modales*/
-
-@keyframes aparecer_botando {
-    0% {
-        transform: translate(-50%, -50%) scale(0.5);
-        opacity: 0.5;
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.05);
-        opacity: 1;
-    }
-    70% {
-        transform: translate(-50%, -50%) scale(0.95);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}
-
-/*Cuadros de estudios y experiencia*/
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-@keyframes fadeOver {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /*Footer*/
