@@ -955,7 +955,8 @@ main {
     --youtube: #254267;
     --linkedin: #0a66c2;
     --download: #0000ff;
-    --certificado: #ff0000 ;
+    --certificado: #ff0000;
+    --web: green;
 }
 .footer .redessociales {
     margin-top: 20px;
@@ -1043,6 +1044,9 @@ main {
 }
 .redessociales ul li .facebook{
     background-color: var(--facebook);
+}
+.redessociales ul li .web {
+    background-color: var(--web);
 }
 
 .redessociales ul li .certificado {
