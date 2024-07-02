@@ -19,6 +19,7 @@ El portafolio está estructurado en las siguientes secciones principales:
 - Proyectos: Presenta los proyectos más importantes de Antonio, incluyendo descripciones, objetivos y enlaces a colaboradores y repositorios de proyectos.
 
 ## Tecnologías implementadas
+
 El portafolio está construido con las siguientes tecnologías:
 
 - HTML5 y CSS3: Para la estructura y el estilo de las páginas web.
