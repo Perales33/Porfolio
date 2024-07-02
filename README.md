@@ -32,8 +32,8 @@ Los recursos y bibliotecas externas están incluidos mediante enlaces CDN para F
 
 ## Enlaces
 
-Link porfolio web: https://perales33.github.io/Porfolio/
-Link a github: https://github.com/Perales33/Porfolio
+- Link porfolio web: https://perales33.github.io/Porfolio/
+- Link a github: https://github.com/Perales33/Porfolio
 
 # English
 
@@ -66,5 +66,5 @@ External resources and libraries are included via CDN links for FontAwesome and 
 
 ## Links
 
-Link porfolio web: https://perales33.github.io/Porfolio/
-Link to github: https://github.com/Perales33/Porfolio
+- Link porfolio web: https://perales33.github.io/Porfolio/
+- Link to github: https://github.com/Perales33/Porfolio
