@@ -54,3 +54,50 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+//Cambio de claro/oscuro
+const body = document.querySelector("body");
+const inicio = document.getElementById("presentacion");
+const lista = document.getElementsByTagName('section');
+const menu = document.querySelector(".navegador");
+const toggle = document.getElementById("cambio");
+const proyetos = document.getElementById("proyecto");
+const cursos = document.getElementById("curso");
+const experiencia = document.getElementById("experiencia");
+const menciones = document.getElementById("mencion");
+const  estudios = document.getElementById("estudios");
+const footer = document.querySelector(".footer");
+const presentacion = document.getElementById("presentacion");
+const cbm = document.getElementsByClassName("cbm");
+const listItems = document.querySelectorAll("nav ul li a");
+const derechos = document.querySelector(".derechos p");
+const flecha = document.querySelector(".flecha a i");
+
+toggle.onclick = function(){
+    toggle.classList.toggle("active");
+    body.classList.toggle("active");
+    menu.classList.toggle("active");
+    inicio.classList.toggle("active");
+    proyetos.classList.toggle("active");
+    cursos.classList.toggle("active");
+    experiencia.classList.toggle("active");
+    menciones.classList.toggle("active");
+    estudios.classList.toggle("active");
+    footer.classList.toggle("active");
+    presentacion.classList.toggle("active");
+    derechos.classList.toggle("active");
+    flecha.classList.toggle("active");
+
+    Array.from(lista).forEach(function(item) {
+        item.classList.toggle("active");
+    });
+
+    Array.from(cbm).forEach(function(item) {
+        item.classList.toggle("active");
+    });
+
+    listItems.forEach(function(item) {
+        item.classList.toggle("active");
+    });
+}
+
