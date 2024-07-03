@@ -17,6 +17,8 @@
     <script src="https://kit.fontawesome.com/e3d46192fc.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 </head>
 
 <body>
@@ -26,7 +28,8 @@
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre_mi">Sobre Mí</a></li>
-                <li><a href="#conocimientos">Conocimientos</a></li>
+                <li><a href="#conocimientos">Conocimientos informáticos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#mis_estudios">Estudios</a></li>
                 <li><a href="#experiencia_laboral">Experiencia laboral</a></li>
                 <li><a href="#menciones">Menciones</a></li>
@@ -43,7 +46,7 @@
         <section class="presentacion" id="presentacion">
                 <div class="image-presentacion">
                     <img src="imagenes/yo.jpg" class="imagen-mia">
-                  </div>                  
+                </div>                  
                 <div class="parrafo+h3">
                     <h1>Antonio Perales Calero</h1>
                     <h2>Estudiante de ingeniería informática - Técnico en Sistemas Operativos en Red</h2>
@@ -106,12 +109,12 @@
         </section>
 
         <!--Conocimientos-->
-        <section class="conocimientos" id="conocimientos">
-            <h3 class="h3">Conocimientos:</h3>
+        <section class="conocimientos">
+            <h3 class="h3">Conocimientos informáticos:</h3>
                 <ul>
                     <li><span class="boton" onclick="abrir_modal('modal1')">Sistemas Operativos y Virtualización</span></li>
                     <li><span class="boton" onclick="abrir_modal('modal2')">Microservicios</span></li>
-                    <li><span class="boton" onclick="abrir_modal('modal3')" id="mis_estudios">Diseño de páginas web</span></li>
+                    <li id="habilidades"><span class="boton" onclick="abrir_modal('modal3')" id="habilidades">Diseño de páginas web</span></li>
                 </ul>
         </section>
 
@@ -167,7 +170,103 @@
                 </p>
             <button onclick="cerrar_modal()">Cerrar</button>
         </dialog>
+        <div class="habilidades" id="skills">
+            <h3 class="h3">Habilidades</h3>
+            <div class="skill_fila">
+            
+                <div class="skill_columna" >
+                
+            <div class="skill">
+                <span>Comunicación</span>
+                <div class="barra">
+                    <div class="proceso comunicacion">
+                        <span>50%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill">
+                <span>Trabajo en equipo</span>
+                <div class="barra">
+                    <div class="proceso trabajo_equipo">
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill">
+                <span>Capacidad de resolución de problemas</span>
+                <div class="barra">
+                        <div class="proceso capacidad">
+                            <span>85%</span>
+                        </div>
+                    </div>
+            </div>
 
+            <div class="skill">
+                <span>Creatividad</span>
+                <div class="barra">
+                    <div class="proceso creatividad">
+                        <span>60%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Adaptabilidad</span>
+                <div class="barra">
+                    <div class="proceso adaptabilidad">
+                        <span>70%</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="skill_columna">
+
+            <div class="skill">
+                <span>Gestión del tiempo</span>
+                <div class="barra">
+                    <div class="proceso tiempo">
+                        <span>90%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Liderazgo</span>
+                <div class="barra">
+                    <div class="proceso lider">
+                        <span>75%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Empatía</span>
+                <div class="barra">
+                    <div class="proceso empatia">
+                        <span>100%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Resiliencia</span>
+                <div class="barra">
+                    <div class="proceso trabajo">
+                        <span>95%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Negociación</span>
+                <div class="barra">
+                    <div class="proceso total">
+                        <span id="mis_estudios">45%</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
         <!--Estudios y experiencia laboral-->
         <div class="estudios" id="estudios">
             <h3 class="h3">Mis estudios </h3>
@@ -188,41 +287,105 @@
                     </div>
                 </div>
         </div>
-        <div class="experiencia"id="experiencia">
-            <h3 class="h3">Mi experiencia laboral </h3>
-                <div class="experiencia_previa">
-                    <div class="ex1">
-                        <img src="imagenes/c6.jpg" draggable="false">
-                        <p>Servicio de atención al cliente <br> Ilunion IT Services | ServiceDesk<br>02/04/2024 - 13/06/2024<br><br>Tareas:
-                            <ul>
-                                <li>Atención al cliente y resolución de problemas.</li>
-                                <li>Instalación de licencias de Office/Norton.</li>
-                                <li>Comprobación de logs y monitorización de sistemas.</li>
-                                <li>Instalación firmware/drivers de dispositivos.</li>
-                                <li id="menciones">Rellenar base de datos con partes de técnicos.</li>
-                            </ul> 
-                        </p>
-                    </div>
+        <div class="experiencia" id="experiencia">
+            <h3 class="h3">Mi experiencia laboral</h3>
+            <div class="experiencia_previa">
+                <div class="ex1">
+                    <img src="imagenes/c6.jpg" draggable="false" alt="Ilunion IT Services">
+                    <p>Servicio de atención al cliente <br> Ilunion IT Services | ServiceDesk<br>02/04/2024 - 13/06/2024</p>
+                    <p><strong>Tareas:</strong></p>
+                    <ul>
+                        <li>Atención al cliente y resolución de problemas.</li>
+                        <li>Instalación de licencias de Office/Norton.</li>
+                        <li>Comprobación de logs y monitorización de sistemas.</li>
+                        <li>Instalación firmware/drivers de dispositivos.</li>
+                        <li id="menciones">Rellenar base de datos con partes de técnicos.</li>
+                    </ul>
                 </div>
+            </div>
         </div>
         
-        <div class="experiencia" id="mencion">
+        <div class="menciones" id="mencion">
             <h3 class="h3">Menciones </h3>
-                <div class="experiencia_previa">
-                    <div class="ex1">
-                        <img src="imagenes/c6.jpg" draggable="false">
-                        <p>Servicio de atención al cliente <br> Ilunion IT Services | ServiceDesk<br>02/04/2024 - 13/06/2024<br><br>Tareas:
-                            <ul>
-                                <li>Atención al cliente y resolución de problemas.</li>
-                                <li>Instalación de licencias de Office/Norton.</li>
-                                <li>Comprobación de logs y monitorización de sistemas.</li>
-                                <li>Instalación firmware/drivers de dispositivos.</li>
-                                <li id="cursos">Rellenar base de datos con partes de técnicos.</li>
-                            </ul> 
-                        </p>
+
+            <div class="swiper mySwiper">
+                
+                <div class="swiper-wrapper">
+                  
+                    <div class="swiper-slide">
+                        <div class="iconos_mencion">
+                            <img class="logo" src="imagenes/c2.jpg" alt="">
+                            <div class="swiper-button-next">
+                                <i class="fa-solid fa-circle-arrow-right "></i>
+                                </div>
+                        </div>
+
+                        <div class="contenido_mencion">
+                            <div class="texto">
+                                <span>2024</span>
+                                <h3>Universidad Europea</h3>
+                                <p>Premio a mejor expediente del área STEAM 2023/24</p>
+                            </div>
+
+                            <div class="img_mencion">
+                                <img src="imagenes/premio.png" alt="">
+                            </div>
+                        </div>
+                        <a href="documentos/Mejor Expediente.jpg" class="btn-1">Documento</a>
                     </div>
-                </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="iconos_mencion">
+                            <div class="swiper-button-prev">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            </div>
+                            <img class="logo" src="imagenes/c2.jpg" alt="">
+                            <div>
+                            <div class="swiper-button-next">
+                            <i class="fa-solid fa-circle-arrow-right "></i>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="contenido_mencion">
+                            <div class="texto">
+                                <span>2024</span>
+                                <h3>Universidad Europea</h3>
+                                <p>Mención honorifica por finalista del concurso de 'Emprender en Positivo'</p>
+                            </div>
+
+                            <div class="img_mencion">
+                                <img src="imagenes/premio.png" alt="">
+                            </div>
+                        </div>
+                        <a href="documentos/Finalista Tu can do it.pdf" class="btn-1">Documento</a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="iconos_mencion">
+                            <div class="swiper-button-prev">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                </div>
+                            <img class="logo" src="imagenes/madrid.png" alt="">
+                        </div>
+
+                        <div class="contenido_mencion">
+                            <div class="texto">
+                                <span>2024</span>
+                                <h3>Comunidad de Madrid</h3>
+                                <p>Mención de la Gran Cruz de la Orden del Dos de Mayo</p>
+                            </div>
+
+                            <div class="img_mencion">
+                                <img src="imagenes/premio.png" alt="">
+                            </div>
+                        </div>
+                        <a href="documentos/cruz.pdf" class="btn-1">Documento</a>
+                    </div>
+              </div>
+              <div id="cursos" class="swiper-pagination"></div>
         </div>
+    </div>
         <!--Cursos y certificados-->
         <div class="cursos" id="curso">
             <h3 class="h3">Cursos y Certificados</h3>
@@ -418,6 +581,7 @@
         </footer>
 
     <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

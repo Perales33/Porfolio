@@ -40,7 +40,7 @@ let menu_toggle = document.querySelector('.menu_toggle');
 let navegador = document.querySelector('.navegador');
 
 menu_toggle.addEventListener('click', function() {
-    navegador.classList.toggle('active');
+    navegador.classList.toggle('responsive');
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -65,13 +65,15 @@ const proyetos = document.getElementById("proyecto");
 const cursos = document.getElementById("curso");
 const experiencia = document.getElementById("experiencia");
 const menciones = document.getElementById("mencion");
-const  estudios = document.getElementById("estudios");
+const estudios = document.getElementById("estudios");
 const footer = document.querySelector(".footer");
 const presentacion = document.getElementById("presentacion");
 const cbm = document.getElementsByClassName("cbm");
 const listItems = document.querySelectorAll("nav ul li a");
 const derechos = document.querySelector(".derechos p");
 const flecha = document.querySelector(".flecha a i");
+const men_toggle = document.querySelector(".menu_toggle");
+const habilidad = document.getElementById("skills");
 
 toggle.onclick = function(){
     toggle.classList.toggle("active");
@@ -87,6 +89,8 @@ toggle.onclick = function(){
     presentacion.classList.toggle("active");
     derechos.classList.toggle("active");
     flecha.classList.toggle("active");
+    men_toggle.classList.toggle("active");
+    habilidad.classList.toggle("active");
 
     Array.from(lista).forEach(function(item) {
         item.classList.toggle("active");
@@ -100,4 +104,27 @@ toggle.onclick = function(){
         item.classList.toggle("active");
     });
 }
+
+//Menciones
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 30,
+      stretch: 0,
+      depth: 50,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+  });
 

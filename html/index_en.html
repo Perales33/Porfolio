@@ -17,6 +17,7 @@
     <script src="https://kit.fontawesome.com/e3d46192fc.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -26,7 +27,8 @@
             <ul>
                 <li><a href="#inicio">Home</a></li>
                 <li><a href="#sobre_mi">About Me</a></li>
-                <li><a href="#conocimientos">Skills</a></li>
+                <li><a href="#conocimientos">Informatics skills</a></li>
+                <li><a href="#habilidades">Skills</a></li>
                 <li><a href="#mis_estudios">Studies</a></li>
                 <li><a href="#experiencia_laboral">Work Experience</a></li>
                 <li><a href="#menciones">Mentions</a></li>
@@ -61,12 +63,12 @@
         <div class="about_me">
         <h3 class="h3">About me:</h3>
         <p id="conocimientos">During the past two years, I have been studying at Universidad Europea de Madrid, where with great effort and dedication I have acquired various skills in network management and essential services such as LDAP, VPN (Wireguard and OpenVPN), and DNS, among others. I also have knowledge in operating systems such as Linux, Windows, and Proxmox, as well as web development with HTML, CSS, JavaScript, and PHP.<br><br>
-            I have completed my studies in "Bachillerato de Ciencias" and "Administración de Sistemas Operativos en Red". Initially drawn to the world of sciences and engineering, I discovered that technology is my passion. Building on this foundation from the past two years, I have decided to pursue a degree in computer engineering at Universidad Europea to further expand my knowledge.<br><br>
+            I have completed my studies in High School Diploma in Sciences and Network Operating Systems Administration Technicia. Initially drawn to the world of sciences and engineering, I discovered that technology is my passion. Building on this foundation from the past two years, I have decided to pursue a degree in computer engineering at Universidad Europea to further expand my knowledge.<br><br>
             I am a person fully committed to learning and seek continuous development both personally and professionally, leading me to achieve significant accomplishments and tackle greater challenges.</p>
             </div>    
         <div class="gustos">
             <div class="columna-gustos">
-                <h3 class="h3">Intereses:</h3>
+                <h3 class="h3">Interests:</h3>
                 <div class="contenedor-gustos">
                 <div class="gusto">
                     <i class="fa fa-basketball-ball"></i>
@@ -107,11 +109,11 @@
 
        <!--Skills-->
        <section class="conocimientos" id="conocimientos">
-        <h3 class="h3">Skills:</h3>
+        <h3 class="h3">Informatics skills:</h3>
         <ul>
             <li><span class="boton" onclick="abrir_modal('modal1')">Operating Systems and Virtualization</span></li>
             <li><span class="boton" onclick="abrir_modal('modal2')">Microservices</span></li>
-            <li><span class="boton" onclick="abrir_modal('modal3')" id="mis_estudios">Web Design</span></li>
+            <li id="habilidades"><span class="boton" onclick="abrir_modal('modal3')" id="mis_estudios">Web Design</span></li>
         </ul>
     </section>
 
@@ -168,7 +170,106 @@
         </p>
         <button onclick="cerrar_modal()">Close</button>
     </dialog>
-
+        <!--Skills-->
+        <div class="habilidades" id="skills">
+            <h3 class="h3">Skills</h3>
+            <div class="skill_fila">
+                <div class="skill_columna">
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="barra">
+                            <div class="proceso comunicacion">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="barra">
+                            <div class="proceso trabajo_equipo">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>Problem Solving</span>
+                        <div class="barra">
+                            <div class="proceso capacidad">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="barra">
+                            <div class="proceso creatividad">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>Adaptability</span>
+                        <div class="barra">
+                            <div class="proceso adaptabilidad">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="skill_columna">
+                    <div class="skill">
+                        <span>Time Management</span>
+                        <div class="barra">
+                            <div class="proceso tiempo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>Leadership</span>
+                        <div class="barra">
+                            <div class="proceso lider">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>Empathy</span>
+                        <div class="barra">
+                            <div class="proceso empatia">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="skill">
+                        <span>Resilience</span>
+                        <div class="barra">
+                            <div class="proceso trabajo">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>Negotiation</span>
+                        <div class="barra">
+                            <div class="proceso total">
+                                <span id="mis_estudios">45%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
          <!--Studies and Work Experience-->
          <div class="estudios" id="estudios">
             <h3 class="h3">Studies</h3>
@@ -185,7 +286,7 @@
                 
                 <div class="e3">
                     <img src="../imagenes/c5.jpeg" draggable="false">
-                    <p>Science Baccalaureate<br><br>September 2020 - June 2022<br>I.E.S. Miguel de Cervantes, Madrid (Daganzo de Arriba)</p>    
+                    <p id="experiencia_laboral">High School Diploma in Sciences<br><br>September 2020 - June 2022<br>I.E.S. Miguel de Cervantes, Madrid (Daganzo de Arriba)</p>    
                 </div>  
             </div>  
         </div>
@@ -194,40 +295,100 @@
                 <div class="experiencia_previa">
                     <div class="ex1">
                         <img src="../imagenes/c6.jpg" draggable="false">
-                        <p>Customer service <br> Ilunion IT Services | ServiceDesk<br>02/04/2024 - 13/06/2024<br><br>
-                            Tasks:
+                        <p>Customer service <br> Ilunion IT Services | ServiceDesk<br>02/04/2024 - 13/06/2024<br><br></p>
+                            <p><strong>Tasks:</strong></p>
                             <ul>
                                 <li>Customer service and problem resolution.</li>
                                 <li>Installation of Office/Norton licenses.</li>
                                 <li>Logs verification and system monitoring.</li>
                                 <li>Installation of firmware/drivers for devices.</li>
                                 <li id="menciones">Database filling with technical reports.</li>
-                            </ul> 
-                            </p>
-                            
+                            </ul>     
                     </div>
                 </div>
         </div>
 
-        <div class="experiencia" id="mencion">
+        <div class="menciones" id="mencion">
             <h3 class="h3">Mentions</h3>
-                <div class="experiencia_previa">
-                    <div class="ex1">
-                        <img src="../imagenes/c6.jpg" draggable="false">
-                        <p>Customer service <br> Ilunion IT Services | ServiceDesk<br>02/04/2024 - 13/06/2024<br><br>
-                            Tasks:
-                            <ul>
-                                <li>Customer service and problem resolution.</li>
-                                <li>Installation of Office/Norton licenses.</li>
-                                <li>Logs verification and system monitoring.</li>
-                                <li>Installation of firmware/drivers for devices.</li>
-                                <li id="cursos">Database filling with technical reports.</li>
-                            </ul> 
-                            </p>
-                            
+
+            <div class="swiper mySwiper">
+                
+                <div class="swiper-wrapper">
+                  
+                    <div class="swiper-slide">
+                        <div class="iconos_mencion">
+                            <img class="logo" src="../imagenes/c2.jpg" alt="">
+                            <div class="swiper-button-next">
+                                <i class="fa-solid fa-circle-arrow-right "></i>
+                                </div>
+                        </div>
+
+                        <div class="contenido_mencion">
+                            <div class="texto">
+                                <span>2024</span>
+                                <h3>Universidad Europea</h3>
+                                <p>Best Academic Record in the STEAM Field 2023/24</p>
+                            </div>
+
+                            <div class="img_mencion">
+                                <img src="../imagenes/premio.png" alt="">
+                            </div>
+                        </div>
+                        <a href="../documentos/Mejor Expediente.jpg" class="btn-1">Documento</a>
                     </div>
-                </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="iconos_mencion">
+                            <div class="swiper-button-prev">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            </div>
+                            <img class="logo" src="../imagenes/c2.jpg" alt="">
+                            <div>
+                            <div class="swiper-button-next">
+                            <i class="fa-solid fa-circle-arrow-right "></i>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="contenido_mencion">
+                            <div class="texto">
+                                <span>2024</span>
+                                <h3>Universidad Europea</h3>
+                                <p>Honorable Mention for Finalist in the 'Emprender en Positivo Competition'</p>
+                            </div>
+
+                            <div class="img_mencion">
+                                <img src="../imagenes/premio.png" alt="">
+                            </div>
+                        </div>
+                        <a href="../documentos/Finalista Tu can do it.pdf" class="btn-1">Documento</a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="iconos_mencion">
+                            <div class="swiper-button-prev">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                </div>
+                            <img class="logo" src="../imagenes/madrid.png" alt="">
+                        </div>
+
+                        <div class="contenido_mencion">
+                            <div class="texto">
+                                <span>2022</span>
+                                <h3>Comunidad de Madrid</h3>
+                                <p>Mention of the Grand Cross of the Order of Dos de Mayo</p>
+                            </div>
+
+                            <div class="img_mencion">
+                                <img src="../imagenes/premio.png" alt="">
+                            </div>
+                        </div>
+                        <a href="../documentos/cruz.pdf" class="btn-1">Documento</a>
+                    </div>
+              </div>
+              <div id="cursos" class="swiper-pagination"></div>
         </div>
+    </div>
 
         <!--Courses and Certificates-->
         <div class="cursos" id="curso">
@@ -427,6 +588,7 @@
         </footer>
 
     <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/index.js"></script>
 </body>
 </html>
