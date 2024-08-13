@@ -1128,7 +1128,6 @@ main {
 .cbm{
     background-color: #444554;
     margin-bottom: 40px;
-    display: flex;
     border-radius: 25px;
 }
 
