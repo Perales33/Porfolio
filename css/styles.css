@@ -1123,6 +1123,7 @@ main {
     margin: 10px 20px;
     margin-bottom: 20px;
     border: #000000 1px solid;
+    grid-column: 2;
 }
 
 .cbm{
