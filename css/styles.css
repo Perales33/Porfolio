@@ -1315,6 +1315,7 @@ main {
     --download: #0000ff;
     --certificado: #FFB900;
     --web: green;
+    --poster: #ea18ea;
 }
 .footer .redessociales {
     margin-top: 20px;
@@ -1409,6 +1410,10 @@ main {
 
 .redessociales ul li .certificado {
     background-color: var(--certificado);
+}
+
+.redessociales ul li .poster {
+    background-color: var(--poster);
 }
 
 @keyframes animacion_flecha {
