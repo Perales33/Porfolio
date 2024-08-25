@@ -1155,7 +1155,7 @@ main {
     justify-content: center;
 }
 
-.contorno1, .contorno2, .contorno3, .contorno4 {
+.contorno1, .contorno2, .contorno3, .contorno4, .contorno6,.contorno5 {
     display: flex;
     flex-direction: column;
     width: calc(25% - 50px);
@@ -1168,7 +1168,7 @@ main {
     .proyectos .cartas{
         text-align: center;
     }
-    .contorno1, .contorno2, .contorno3, .contorno4 {
+    .contorno1, .contorno2, .contorno3, .contorno4,.contorno6,.contorno5 {
         margin-right: 100px;
     }
 }
@@ -1215,6 +1215,9 @@ main {
 
 .contorno4 .cara1 {
     background-color:  #ffffff;
+}
+.contorno6 .cara1{
+    background-color: #ffcc00;
 }
 
 .cara1 {
