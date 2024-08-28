@@ -1155,7 +1155,7 @@ main {
     justify-content: center;
 }
 
-.contorno1, .contorno2, .contorno3, .contorno4, .contorno6,.contorno5 {
+.contorno1, .contorno2, .contorno3, .contorno4, .contorno5,.contorno6, .contorno7 {
     display: flex;
     flex-direction: column;
     width: calc(25% - 50px);
@@ -1168,7 +1168,7 @@ main {
     .proyectos .cartas{
         text-align: center;
     }
-    .contorno1, .contorno2, .contorno3, .contorno4,.contorno6,.contorno5 {
+    .contorno1, .contorno2, .contorno3, .contorno4,.contorno5,.contorno6, .contorno7 {
         margin-right: 100px;
     }
 }
@@ -1177,7 +1177,7 @@ main {
     .proyectos .cartas{
         text-align: center;
     }
-    .contorno1, .contorno2, .contorno3, .contorno4 {
+    .contorno1, .contorno2, .contorno3, .contorno4, .contorno5,.contorno6, .contorno7 {
         margin-right: 200px;
     }
 }
@@ -1185,7 +1185,7 @@ main {
     .cartas{
         text-align: center;
     }
-    .contorno1, .contorno2, .contorno3, .contorno4 {
+    .contorno1, .contorno2, .contorno3, .contorno4, .contorno5,.contorno6, .contorno7 {
         margin-right: 250px;
     }
 }
@@ -1194,7 +1194,7 @@ main {
     .cartas{
         text-align: center;
     }
-    .contorno1, .contorno2, .contorno3, .contorno4 {
+    .contorno1, .contorno2, .contorno3, .contorno4, .contorno5,.contorno6, .contorno7 {
         margin-right: 320px;
     }
 }
@@ -1220,6 +1220,9 @@ main {
     background-color: #ffcc00;
 }
 
+.contorno6 .cara1{
+    background-color: #000;
+}
 .cara1 {
     background-repeat: no-repeat;
     background-size: cover;
