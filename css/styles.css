@@ -791,7 +791,7 @@ main {
     background-color: #1CB698;
     text-align: center;
     border-radius: 50px;
-    animation: fadeIn 2s 1s ease both;
+    animation: fadeOver 2s 1s ease both;
 }
 
 .estudios_previos .e3{
@@ -801,13 +801,19 @@ main {
     animation: fadeOut 2s 1s ease both;
 }
 
-.estudios_previos > .e2{
+.estudios_previos .e2{
     background-color: #1CB698;
     border-radius: 50px;
     text-align: center;
     animation: fadeOver 2s 1s ease both;
 }
 
+.estudios_previos .e4{
+    background-color: #1CB698;
+    border-radius: 50px;
+    text-align: center;
+    animation: fadeIn 2s 1s ease both;
+}
 .estudios_previos p {
     color: #ffffff;
     margin-bottom: 10px;
@@ -822,7 +828,7 @@ main {
     width: 90%;
 }
 
-.e1,.e2,.e3{
+.e1,.e2,.e3, .e4{
     height: auto;
     width: 300px;
     margin: auto;
@@ -836,13 +842,15 @@ main {
 
 .estudios_previos .e1:hover img,
 .estudios_previos .e2:hover img,
-.estudios_previos .e3:hover img {
+.estudios_previos .e3:hover img,
+.estudios_previos .e4:hover img {
     opacity: 0;
 }
 
 .estudios_previos .e1:hover p,
 .estudios_previos .e2:hover p,
-.estudios_previos .e3:hover p {
+.estudios_previos .e3:hover p,
+.estudios_previos .e4:hover p{
     opacity: 1;
     bottom: auto;
     overflow: visible;
@@ -1222,7 +1230,7 @@ main {
 
 .contorno7 .cara1{
     
-    background-color: #5b0c49;
+    background-color: #ffffff;
 }
 .cara1 {
     background-repeat: no-repeat;
