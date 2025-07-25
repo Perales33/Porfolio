@@ -1,638 +1,647 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio</title>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Porfolio</title>
 
-    <!--Icono-->
-    <link rel="icon" type="image/png" href="../imagenes/porfolio-removebg-preview.png"/>
+        <!--Icono-->
+        <link rel="icon" type="image/png" href="../imagenes/porfolio-removebg-preview.png"/>
 
-    <!--CSS-->
-    <link rel="stylesheet" href="../css/styles.css"/>
+        <!--CSS-->
+        <link rel="stylesheet" href="../css/styles.css"/>
 
-    <!--JS-->
+        <!--JS-->
 
-    <!--Enlaces Externos-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384">
-    <script src="https://kit.fontawesome.com/e3d46192fc.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-</head>
+        <!--Enlaces Externos-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384">
+        <script src="https://kit.fontawesome.com/e3d46192fc.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    </head>
 
-<body>
-    <div class="navegador">
-        <div class="menu_toggle"></div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Home</a></li>
-                <li><a href="#sobre_mi">About Me</a></li>
-                <li><a href="#conocimientos">Informatics skills</a></li>
-                <li><a href="#habilidades">Skills</a></li>
-                <li><a href="#mis_estudios">Studies</a></li>
-                <li><a href="#experiencia_laboral">Work Experience</a></li>
-                <li><a href="#menciones">Mentions</a></li>
-                <li><a href="#cursos">Courses & Certificates</a></li>
-                <li><a href="#proyectos">Projects</a></li>
-                <li><a href="../index.html">Translate to spanish</a></li>
-                <li id="cambio"><i class="indicador"></i></li>
-            </ul>
-        </nav>
-    </div>
-
-    <main>
-    <!--Who am I?-->
-    <div class="inicio" id="inicio">
-        <section class="presentacion" id="presentacion">
-            <div class="image-presentacion">
-                <img src="../imagenes/yo.jpg" class="imagen-mia">
-            </div>
-            <div class="parrafo+h3">
-                <h1>Antonio Perales Calero</h1>
-                <h2>Computer Engineering Student - Network Operating Systems Technician</h2>
-                <hr>
-            </div>
-            <div class="iconos">
-                <a href="../documentos/CV_AntonioPerales.pdf"" class="facebook"><i class="fa-regular fa-address-book"></i></a>
-                <a href="https://github.com/Perales33/Porfolio.git" class="twitter"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/antonioperales33/" class="linkedin"><i class="fab fa-linkedin-in" id="sobre_mi"></i></a>
-            </div>
-        </section>
-    </div>
-    <section class="descripcion">
-        <div class="about_me">
-        <h3 class="h3">About me:</h3>
-        <p id="conocimientos">During the past two years, I have been studying at Universidad Europea de Madrid, where with great effort and dedication I have acquired various skills in network management and essential services such as LDAP, VPN (Wireguard and OpenVPN), and DNS, among others. I also have knowledge in operating systems such as Linux, Windows, and Proxmox, as well as web development with HTML, CSS, JavaScript, and PHP.<br><br>
-            I have completed my studies in High School Diploma in Sciences and Network Operating Systems Administration Technicia. Initially drawn to the world of sciences and engineering, I discovered that technology is my passion. Building on this foundation from the past two years, I have decided to pursue a degree in computer engineering at Universidad Europea to further expand my knowledge.<br><br>
-            I am a person fully committed to learning and seek continuous development both personally and professionally, leading me to achieve significant accomplishments and tackle greater challenges.</p>
-            </div>    
-        <div class="gustos">
-            <div class="columna-gustos">
-                <h3 class="h3">Interests:</h3>
-                <div class="contenedor-gustos">
-                <div class="gusto">
-                    <i class="fa fa-basketball-ball"></i>
-                    <span>Baketball</span>
-                </div>
-                <div class="gusto">
-                    <i class="fa-brands fa-spotify"></i>
-                    <span>Music</span>
-                </div>
-                <div class="gusto">
-                    <i class="fa fa-plane"></i>
-                    <span>Travel</span>
-                </div>
-                <div class="gusto">
-                    <i class="fa-brands fa-steam-symbol"></i>
-                    <span>Videogames</span>
-                </div>
-                <div class="gusto">
-                    <i class="fa-brands fa-rebel"></i>                            
-                    <span>Star Wars</span>
-                </div>
-                <div class="gusto">
-                    <i class="fa-solid fa-dragon"></i>
-                    <span>Dragon Ball</span>
-                </div>
-                <div class="gusto">
-                    <i class="fa-brands fa-windows"></i>
-                    <span>Windows</span>
-                </div>
-                <div class="gusto">
-                    <i class="fa-brands fa-youtube"></i>
-                    <span>Youtube</span>
-                </div>
-            </div>
+    <body>
+        <div class="navegador">
+            <div class="menu_toggle"></div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#sobre_mi">About Me</a></li>
+                    <li><a href="#conocimientos">Informatics skills</a></li>
+                    <li><a href="#habilidades">Skills</a></li>
+                    <li><a href="#mis_estudios">Studies</a></li>
+                    <li><a href="#experiencia_laboral">Work Experience</a></li>
+                    <li><a href="#menciones">Mentions</a></li>
+                    <li><a href="#cursos">Courses & Certificates</a></li>
+                    <li><a href="#proyectos">Projects</a></li>
+                    <li><a href="../index.html">Translate to spanish</a></li>
+                    <li id="cambio"><i class="indicador"></i></li>
+                </ul>
+            </nav>
         </div>
-        </div>
-    </section>
 
-    <!--Skills-->
-    <section class="conocimientos" id="conocimientos">
-        <h3 class="h3">Informatics skills:</h3>
-        <ul>
-            <li><span class="boton" onclick="abrir_modal('modal1')">Operating Systems and Virtualization</span></li>
-            <li><span class="boton" onclick="abrir_modal('modal2')">Microservices</span></li>
-            <li id="habilidades"><span class="boton" onclick="abrir_modal('modal3')" id="mis_estudios">Web Design</span></li>
-        </ul>
-    </section>
-
-    <!--Black Overlay-->
-    <div id="en_negro" class="en_negro" onclick="cerrar_modal()"></div>
-
-    <!--Skill Modals-->
-    <dialog class="modal" id="modal1">
-        <h2>Operating Systems and Virtualization</h2>
-        <p>
-            <ul>
-                <li>Ubuntu (Desktop and Server)</li>
-                <li>Windows (Server and 10/11/7)</li>
-                <li>Proxmox</li>
-                <li>LXC</li>
-                <li>VMware Workstation</li>
-                <li>Oracle VM VirtualBox</li>
-                <li>Docker</li>
-            </ul>
-        </p>
-        <button onclick="cerrar_modal()">Close</button>
-    </dialog>
-    <dialog class="modal" id="modal2">
-        <h2>Microservices</h2>
-        <p>
-            <ul>
-                <li>DNS with Bind9</li>
-                <li>DHCP</li>
-                <li>Apache2 and Nginx</li>
-                <li>VPN with Wireguard and OpenVPN</li>
-                <li>Proxy</li>
-                <li>LDAP and AD DC</li>
-                <li>Rsyslog</li>
-                <li>Siem</li>
-                <li>Certificates with OpenSSL</li>
-                <li>MySQL</li>
-            </ul>
-        </p>
-        <button onclick="cerrar_modal()">Close</button>
-    </dialog>
-    <dialog class="modal" id="modal3">
-        <h2>Web Design</h2>
-        <p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>MariaDB</li>
-                <li>WordPress</li>
-                <li>Git</li>
-            </ul>
-        </p>
-        <button onclick="cerrar_modal()">Close</button>
-    </dialog>
-        <!--Skills-->
-        <div class="habilidades" id="skills">
-            <h3 class="h3">Skills</h3>
-            <div class="skill_fila">
-                <div class="skill_columna">
-                    <div class="skill">
-                        <span>Communication</span>
-                        <div class="barra">
-                            <div class="proceso comunicacion">
-                                <span>50%</span>
-                            </div>
-                        </div>
+        <main>
+            <!--Who am I?-->
+            <div class="inicio" id="inicio">
+                <section class="presentacion" id="presentacion">
+                    <div class="image-presentacion">
+                        <img src="../imagenes/yo.jpg" class="imagen-mia">
                     </div>
-                    
-                    <div class="skill">
-                        <span>Teamwork</span>
-                        <div class="barra">
-                            <div class="proceso trabajo_equipo">
-                                <span>80%</span>
-                            </div>
-                        </div>
+                    <div>
+                        <h1>Antonio Perales Calero</h1>
+                        <h2>Computer Engineering Student - Network Operating Systems Technician</h2>
+                        <hr>
                     </div>
-                    
-                    <div class="skill">
-                        <span>Problem Solving</span>
-                        <div class="barra">
-                            <div class="proceso capacidad">
-                                <span>85%</span>
-                            </div>
-                        </div>
+                    <div class="iconos">
+                        <a href="../documentos/CV_AntonioPerales.pdf"" class="facebook"><i class="fa-regular fa-address-book"></i></a>
+                        <a href="https://github.com/Perales33/Porfolio.git" class="twitter"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/antonioperales33/" class="linkedin"><i class="fab fa-linkedin-in" id="sobre_mi"></i></a>
                     </div>
-        
-                    <div class="skill">
-                        <span>Creativity</span>
-                        <div class="barra">
-                            <div class="proceso creatividad">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill">
-                        <span>Adaptability</span>
-                        <div class="barra">
-                            <div class="proceso adaptabilidad">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="skill_columna">
-                    <div class="skill">
-                        <span>Time Management</span>
-                        <div class="barra">
-                            <div class="proceso tiempo">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill">
-                        <span>Leadership</span>
-                        <div class="barra">
-                            <div class="proceso lider">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill">
-                        <span>Empathy</span>
-                        <div class="barra">
-                            <div class="proceso empatia">
-                                <span>100%</span>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="skill">
-                        <span>Resilience</span>
-                        <div class="barra">
-                            <div class="proceso trabajo">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill">
-                        <span>Negotiation</span>
-                        <div class="barra">
-                            <div class="proceso total">
-                                <span id="mis_estudios">45%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </section>
             </div>
-        </div>
-        
-         <!--Studies and Work Experience-->
-         <div class="estudios" id="estudios">
-            <h3 class="h3">Studies</h3>
-            <div class="estudios_previos">
-                <div class="e1">
-                    <img src="../imagenes/c2.jpg" draggable="false">
-                    <p>Computer Engineering Degree <br><br>October 2024 - Present<br>Universidad Europea, Madrid (Villaviciosa de Odón)</p> 
-                </div>
-                
-                <div class="e2">
-                    <img src="../imagenes/c2.jpg" draggable="false">
-                    <p>Network Operating Systems Administration Technician<br><br>September 2022 - June 2024<br>Universidad Europea, Madrid (Alcobendas)</p>
-                </div>
-                
-                <div class="e3">
-                    <img src="../imagenes/c5.jpeg" draggable="false">
-                    <p id="experiencia_laboral">High School Diploma in Sciences<br><br>September 2020 - June 2022<br>I.E.S. Miguel de Cervantes, Madrid (Daganzo de Arriba)</p>    
+
+            <section class="descripcion">
+                <div class="about_me">
+                    <h3 class="h3">About me:</h3>
+                        <p id="conocimientos">During the past two years, I have been studying at Universidad Europea de Madrid, where with great effort and dedication I have acquired various skills in network management and essential services such as LDAP, VPN (Wireguard and OpenVPN), and DNS, among others. I also have knowledge in operating systems such as Linux, Windows, and Proxmox, as well as web development with HTML, CSS, JavaScript, and PHP.<br><br>
+                        I have completed my studies in High School Diploma in Sciences and Network Operating Systems Administration Technicia. Initially drawn to the world of sciences and engineering, I discovered that technology is my passion. Building on this foundation from the past two years, I have decided to pursue a degree in computer engineering at Universidad Europea to further expand my knowledge.<br><br>
+                        I am a person fully committed to learning and seek continuous development both personally and professionally, leading me to achieve significant accomplishments and tackle greater challenges.</p>
                 </div>  
-            </div>  
-        </div>
-        <div class="experiencia" id="experiencia">
-            <h3 class="h3">My work experience</h3>
-                <div class="experiencia_previa">
-                    <div class="ex1">
-                        <img src="../imagenes/c6.jpg" draggable="false">
-                        <p>Customer service <br> Ilunion IT Services | ServiceDesk<br>02/04/2024 - 13/06/2024<br><br></p>
-                            <p><strong>Tasks:</strong></p>
-                            <ul>
-                                <li>Customer service and problem resolution.</li>
-                                <li>Installation of Office/Norton licenses.</li>
-                                <li>Logs verification and system monitoring.</li>
-                                <li>Installation of firmware/drivers for devices.</li>
-                                <li id="menciones">Database filling with technical reports.</li>
-                            </ul>     
+
+                <div class="gustos">
+                    <div class="columna-gustos">
+                        <h3 class="h3">Interests:</h3>
+                        <div class="contenedor-gustos">
+                            <div class="gusto">
+                                <i class="fa fa-basketball-ball"></i>
+                                <span>Baketball</span>
+                            </div>
+                            <div class="gusto">
+                                <i class="fa-brands fa-spotify"></i>
+                                <span>Music</span>
+                            </div>
+
+                            <div class="gusto">
+                                <i class="fa fa-plane"></i>
+                                <span>Travel</span>
+                            </div>
+                            
+                            <div class="gusto">
+                                <i class="fa-brands fa-steam-symbol"></i>
+                                <span>Videogames</span>
+                            </div>
+                            
+                            <div class="gusto">
+                                <i class="fa-brands fa-rebel"></i>                            
+                                <span>Star Wars</span>
+                            </div>
+                            
+                            <div class="gusto">
+                                <i class="fa-solid fa-dragon"></i>
+                                <span>Dragon Ball</span>
+                            </div>
+                            
+                            <div class="gusto">
+                                <i class="fa-brands fa-windows"></i>
+                                <span>Windows</span>
+                            </div>
+                            
+                            <div class="gusto">
+                                <i class="fa-brands fa-youtube"></i>
+                                <span>Youtube</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-        </div>
+            </section>
 
-        <div class="menciones" id="mencion">
-            <h3 class="h3">Mentions</h3>
+            <!--Skills-->
+            <section class="conocimientos" id="conocimientos">
+                <h3 class="h3">Informatics skills:</h3>
+                <ul>
+                    <li><span class="boton" onclick="abrir_modal('modal1')">Operating Systems and Virtualization</span></li>
+                    <li><span class="boton" onclick="abrir_modal('modal2')">Microservices</span></li>
+                    <li id="habilidades"><span class="boton" onclick="abrir_modal('modal3')" id="mis_estudios">Web Design</span></li>
+                </ul>
+            </section>
 
-            <div class="swiper mySwiper">
-                
-                <div class="swiper-wrapper">
-                  
-                    <div class="swiper-slide">
-                        <div class="iconos_mencion">
-                            <img class="logo" src="../imagenes/c2.jpg" alt="">
-                            <div class="swiper-button-next">
-                                <i class="fa-solid fa-circle-arrow-right "></i>
+            <!--Black Overlay-->
+            <div id="en_negro" class="en_negro" onclick="cerrar_modal()"></div>
+
+            <!--Skill Modals-->
+            <dialog class="modal" id="modal1">
+                <h2>Operating Systems and Virtualization</h2>
+                <p>
+                    <ul>
+                        <li>Ubuntu (Desktop and Server)</li>
+                        <li>Windows (Server and 10/11/7)</li>
+                        <li>Proxmox</li>
+                        <li>LXC</li>
+                        <li>VMware Workstation</li>
+                        <li>Oracle VM VirtualBox</li>
+                        <li>Docker</li>
+                    </ul>
+                </p>
+                <button onclick="cerrar_modal()">Close</button>
+            </dialog>
+            <dialog class="modal" id="modal2">
+                <h2>Microservices</h2>
+                <p>
+                    <ul>
+                        <li>DNS with Bind9</li>
+                        <li>DHCP</li>
+                        <li>Apache2 and Nginx</li>
+                        <li>VPN with Wireguard and OpenVPN</li>
+                        <li>Proxy</li>
+                        <li>LDAP and AD DC</li>
+                        <li>Rsyslog</li>
+                        <li>Siem</li>
+                        <li>Certificates with OpenSSL</li>
+                        <li>MySQL</li>
+                    </ul>
+                </p>
+                <button onclick="cerrar_modal()">Close</button>
+            </dialog>
+            <dialog class="modal" id="modal3">
+                <h2>Web Design</h2>
+                <p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>MariaDB</li>
+                        <li>WordPress</li>
+                        <li>Git</li>
+                        <li>Java</li>
+                    </ul>
+                </p>
+                <button onclick="cerrar_modal()">Close</button>
+            </dialog>
+
+            <!--Skills-->
+            <div class="habilidades" id="skills">
+                <h3 class="h3">Skills</h3>
+                <div class="skill_fila">
+                    <div class="skill_columna">
+                        <div class="skill">
+                            <span>Communication</span>
+                            <div class="barra">
+                                <div class="proceso comunicacion">
+                                    <span>50%</span>
                                 </div>
-                        </div>
-
-                        <div class="contenido_mencion">
-                            <div class="texto">
-                                <span>2024</span>
-                                <h3>Universidad Europea</h3>
-                                <p>Best Academic Record in the STEAM Field 2023/24</p>
-                            </div>
-
-                            <div class="img_mencion">
-                                <img src="../imagenes/premio.png" alt="">
                             </div>
                         </div>
-                        <a href="../documentos/Mejor Expediente.jpg" class="btn-1">Documento</a>
+                        
+                        <div class="skill">
+                            <span>Teamwork</span>
+                            <div class="barra">
+                                <div class="proceso trabajo_equipo">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <span>Problem Solving</span>
+                            <div class="barra">
+                                <div class="proceso capacidad">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="skill">
+                            <span>Creativity</span>
+                            <div class="barra">
+                                <div class="proceso creatividad">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <span>Adaptability</span>
+                            <div class="barra">
+                                <div class="proceso adaptabilidad">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="skill_columna">
+                        <div class="skill">
+                            <span>Time Management</span>
+                            <div class="barra">
+                                <div class="proceso tiempo">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <span>Leadership</span>
+                            <div class="barra">
+                                <div class="proceso lider">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <span>Empathy</span>
+                            <div class="barra">
+                                <div class="proceso empatia">
+                                    <span>100%</span>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="skill">
+                            <span>Resilience</span>
+                            <div class="barra">
+                                <div class="proceso trabajo">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <span>Negotiation</span>
+                            <div class="barra">
+                                <div class="proceso total">
+                                    <span id="mis_estudios">45%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!--Studies and Work Experience-->
+            <div class="estudios" id="estudios">
+                <h3 class="h3">Studies</h3>
+                <div class="estudios_previos">
+                    <div class="e1">
+                        <img src="../imagenes/c2.jpg" draggable="false">
+                        <p>Computer Engineering Degree <br><br>October 2024 - Present<br>Universidad Europea, Madrid (Villaviciosa de Odón)</p> 
                     </div>
                     
-                    <div class="swiper-slide">
-                        <div class="iconos_mencion">
-                            <div class="swiper-button-prev">
-                            <i class="fa-solid fa-circle-arrow-left"></i>
-                            </div>
-                            <img class="logo" src="../imagenes/c2.jpg" alt="">
-                            <div>
-                            <div class="swiper-button-next">
-                            <i class="fa-solid fa-circle-arrow-right "></i>
-                            </div>
-                            </div>
-                        </div>
-
-                        <div class="contenido_mencion">
-                            <div class="texto">
-                                <span>2024</span>
-                                <h3>Universidad Europea</h3>
-                                <p>Honorable Mention for Finalist in the 'Emprender en Positivo Competition'</p>
-                            </div>
-
-                            <div class="img_mencion">
-                                <img src="../imagenes/premio.png" alt="">
-                            </div>
-                        </div>
-                        <a href="../documentos/Finalista Tu can do it.pdf" class="btn-1">Documento</a>
+                    <div class="e2">
+                        <img src="../imagenes/c2.jpg" draggable="false">
+                        <p>Network Operating Systems Administration Technician<br><br>September 2022 - June 2024<br>Universidad Europea, Madrid (Alcobendas)</p>
                     </div>
+                    
+                    <div class="e3">
+                        <img src="../imagenes/c5.jpeg" draggable="false">
+                        <p id="experiencia_laboral">High School Diploma in Sciences<br><br>September 2020 - June 2022<br>I.E.S. Miguel de Cervantes, Madrid (Daganzo de Arriba)</p>    
+                    </div>  
+                </div>  
+            </div>
 
-                    <div class="swiper-slide">
-                        <div class="iconos_mencion">
-                            <div class="swiper-button-prev">
-                                <i class="fa-solid fa-circle-arrow-left"></i>
+            <div class="experiencia" id="experiencia">
+                <h3 class="h3">My work experience</h3>
+                    <div class="experiencia_previa">
+                        <div class="ex1">
+                            <img src="../imagenes/c6.jpg" draggable="false">
+                            <p>Customer service <br> Ilunion IT Services | ServiceDesk<br>02/04/2024 - 13/06/2024<br><br></p>
+                                <p><strong>Tasks:</strong></p>
+                                <ul>
+                                    <li>Customer service and problem resolution.</li>
+                                    <li>Installation of Office/Norton licenses.</li>
+                                    <li>Logs verification and system monitoring.</li>
+                                    <li>Installation of firmware/drivers for devices.</li>
+                                    <li id="menciones">Database filling with technical reports.</li>
+                                </ul>     
+                        </div>
+                    </div>
+            </div>
+
+            <div class="menciones" id="mencion">
+                <h3 class="h3">Mentions</h3>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="iconos_mencion">
+                                <img class="logo" src="../imagenes/c2.jpg" alt="">
+                                <div class="swiper-button-next">
+                                    <i class="fa-solid fa-circle-arrow-right "></i>
+                                    </div>
+                            </div>
+
+                            <div class="contenido_mencion">
+                                <div class="texto">
+                                    <span>2024</span>
+                                    <h3>Universidad Europea</h3>
+                                    <p>Best Academic Record in the STEAM Field 2023/24</p>
                                 </div>
-                            <img class="logo" src="../imagenes/madrid.png" alt="">
-                        </div>
 
-                        <div class="contenido_mencion">
-                            <div class="texto">
-                                <span>2022</span>
-                                <h3>Comunidad de Madrid</h3>
-                                <p>Mention of the Grand Cross of the Order of Dos de Mayo</p>
+                                <div class="img_mencion">
+                                    <img src="../imagenes/premio.png" alt="">
+                                </div>
+                            </div>
+                            <a href="../documentos/Mejor Expediente.jpg" class="btn-1">Documento</a>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="iconos_mencion">
+                                <div class="swiper-button-prev">
+                                    <i class="fa-solid fa-circle-arrow-left"></i>
+                                </div>
+                                <img class="logo" src="../imagenes/c2.jpg" alt="">
+                                
+                                <div>
+                                    <div class="swiper-button-next">
+                                        <i class="fa-solid fa-circle-arrow-right "></i>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="img_mencion">
-                                <img src="../imagenes/premio.png" alt="">
+                            <div class="contenido_mencion">
+                                <div class="texto">
+                                    <span>2024</span>
+                                    <h3>Universidad Europea</h3>
+                                    <p>Honorable Mention for Finalist in the 'Emprender en Positivo Competition'</p>
+                                </div>
+
+                                <div class="img_mencion">
+                                    <img src="../imagenes/premio.png" alt="">
+                                </div>
                             </div>
+                            <a href="../documentos/Finalista Tu can do it.pdf" class="btn-1">Documento</a>
                         </div>
-                        <a href="../documentos/cruz.pdf" class="btn-1">Documento</a>
+
+                        <div class="swiper-slide">
+                            <div class="iconos_mencion">
+                                <div class="swiper-button-prev">
+                                    <i class="fa-solid fa-circle-arrow-left"></i>
+                                    </div>
+                                <img class="logo" src="../imagenes/madrid.png" alt="">
+                            </div>
+
+                            <div class="contenido_mencion">
+                                <div class="texto">
+                                    <span>2022</span>
+                                    <h3>Comunidad de Madrid</h3>
+                                    <p>Mention of the Grand Cross of the Order of Dos de Mayo</p>
+                                </div>
+
+                                <div class="img_mencion">
+                                    <img src="../imagenes/premio.png" alt="">
+                                </div>
+                            </div>
+                            <a href="../documentos/cruz.pdf" class="btn-1">Documento</a>
+                        </div>
                     </div>
+                    <div id="cursos" class="swiper-pagination"></div>
                 </div>
-            <div id="cursos" class="swiper-pagination"></div>
-        </div>
-    </div>
+            </div>
 
-        <!--Courses and Certificates-->
-        <div class="cursos" id="curso">
-            <h3 class="h3">Courses and Certificates</h3>
-                <div class="SKFA">
-                    <h4>Cisco Skills for All</h4>
-                        <div class="galeria">
-                            <a href="../documentos/Introduction_to_Cybersecurity_Badge20230925-28-rm1xb9.pdf"><img src="../imagenes/introduction-to-cybersecurity.png"></a>
-                            <a href="../documentos/Introduction_to_Data_Science_Badge20230928-39-de2emn.pdf"><img src="../imagenes/introduction-to-data-science.png"></a>
-                            <a href="../documentos/JavaScript_Essentials_1_Badge20230928-28-g33sf0.pdf"><img src="../imagenes/javascript-essentials-1.png"></a>
-                            <a href="../documentos/Operating_Systems_Basics_Badge20230928-28-8j85di.pdf"><img src="../imagenes/operating-systems-basics.png"></a>
-                            <a href="../documentos/Computer_Hardware_Basics_Badge20230926-36-ebsrt.pdf"><img src="../imagenes/computer-hardware-basics.png"></a>
-                            <a href="../documentos/English_for_IT_1_Badge20230928-44-v9y5ku.pdf"><img src="../imagenes/english-for-it-1.png"></a>
-                            <a href="../documentos/English_for_IT_2_Badge20230928-28-ou9mj3.pdf"><img src="../imagenes/english-for-it-2.png"></a>
-                        </div>
-                </div>
-        
-                <div class="cbm">
-                    <h4>Cisco Networking Academy</h4>
-                    <div class="curso-MC">
-                        <p>Cybersecurity Introduction <br><br> Cisco Networking Academy - 19/11/2023</p>
-                        <div class="redessociales">
-                            <ul>
-                                <li><a href="../documentos/AntonioPerales-Introducción a l-certificate (1).pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
-                            </ul>
-                        </div>
+            <!--Courses and Certificates-->
+            <div class="cursos" id="curso">
+                <h3 class="h3">Courses and Certificates</h3>
+                    <div class="SKFA">
+                        <h4>Cisco Skills for All</h4>
+                            <div class="galeria">
+                                <a href="../documentos/Introduction_to_Cybersecurity_Badge20230925-28-rm1xb9.pdf"><img src="../imagenes/introduction-to-cybersecurity.png"></a>
+                                <a href="../documentos/Introduction_to_Data_Science_Badge20230928-39-de2emn.pdf"><img src="../imagenes/introduction-to-data-science.png"></a>
+                                <a href="../documentos/JavaScript_Essentials_1_Badge20230928-28-g33sf0.pdf"><img src="../imagenes/javascript-essentials-1.png"></a>
+                                <a href="../documentos/Operating_Systems_Basics_Badge20230928-28-8j85di.pdf"><img src="../imagenes/operating-systems-basics.png"></a>
+                                <a href="../documentos/Computer_Hardware_Basics_Badge20230926-36-ebsrt.pdf"><img src="../imagenes/computer-hardware-basics.png"></a>
+                                <a href="../documentos/English_for_IT_1_Badge20230928-44-v9y5ku.pdf"><img src="../imagenes/english-for-it-1.png"></a>
+                                <a href="../documentos/English_for_IT_2_Badge20230928-28-ou9mj3.pdf"><img src="../imagenes/english-for-it-2.png"></a>
+                            </div>
                     </div>
-                
-                    <div class="curso-MC">
-                        <p>JavaScript Essentials 1 (JSE) <br><br> JavaScript Institute (Cisco Networking Academy) - 27/12/2023</p>
-                        <div class="redessociales">
-                            <ul>
-                                <li><a href="../documentos/AntonioPerales-Curso básico de -certificate.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
-                            </ul>
-                        </div>
-                    </div>
-                
-                    <div class="curso-MC">
-                        <p>Cybersecurity Essentials <br><br> Cisco Networking Academy - 31/12/2023</p>
-                        <div class="redessociales">
-                            <ul>
-                                <li><a href="../documentos/AntonioPerales-Continuación a l-certificate.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
-                            </ul>
-                        </div>
-                    </div>
-                
-                    <div class="curso-MC">
-                        <p>NDG Linux Essentials <br><br> NDG (Cisco Networking Academy) - 28/06/2024</p>
-                        <div class="redessociales">
-                            <ul>
-                                <li><a href="../documentos/AntonioPerales-NDG Linux Essent-certificate.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="cbm">
-                    <h4>Microsoft Learn</h4>
-                    <div class="curso-MC">
-                        <p>Implementation, Configuration, and Administration of Windows Server <br><br> Microsoft Learn - 26/09/2023</p>
-                        <div class="redessociales">
-                            <ul>
-                                <li><a href="../documentos/Logros - antonioperales-9962 _ Microsoft Learn.PDF" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="cbm">    
-                    <h4>Backtrack Academy</h4>
-                    <div class="curso-MC">
-                        <p>Vulnerability Exploitation <br><br> Backtrack Academy - 04/01/2023</p>
-                        <div class="redessociales">
-                            <ul>
-                                <li><a href="../documentos/pdf_exam.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cbm">    
-                    <h4>Santander Open Academy</h4>
-                    <div class="curso-MC">
-                        <p> Basic Knowledge of Python<br><br> Santander Open Academy - 13/08/2024</p>
-                        <div class="redessociales">
-                            <ul>
-                                <li><a href="../documentos/python.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="curso-MC">
-                        <p>Introduction to Data Science <br><br> Santander Open Academy - 13/08/2024<br><br>In association with: IE University</p>
-                        <div class="redessociales">
-                            <ul>
-                                <li><a href="../documentos/ciencia_datos.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="curso-MC">
-                        <p>Internet of Things <br><br> Santander Open Academy - 13/08/2024<br><br>In association with: MIT Professional Education</p>
-                        <div class="redessociales">
-                            <ul>
-                                <li><a href="../documentos/iot.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="curso-MC">
-                        <p>Copilot <br><br>Santander Open Academy - 13/08/2024<br><br>In association with: Microsoft</p>
-                        <div class="redessociales">
-                            <ul>
-                                <li><a href="../documentos/copilot.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="curso-MC">
-                        <p>Digital Transformation <br><br>Santander Open Academy - 13/08/2024<br><br>In association with: MIT Professional Education</p>
-                        <div class="redessociales">
-                            <ul>
-                                <li><a href="../documentos/transformacion_digital_santander.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="curso-MC">
-                        <p>Google: Artificial Intelligence and productivity <br><br>Santander Open Academy - 13/08/2024<br><br>In association with: Google</p>
-                        <div class="redessociales">
-                            <ul>
-                                <li id="proyectos"><a href="../documentos/google.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="cbm">
-                    <h4>Harvard University (edX)</h4>
+            
+                    <div class="cbm">
+                        <h4>Cisco Networking Academy</h4>
                         <div class="curso-MC">
-                            <p>CS50's Introduction to Computer Science<br><br>Harvard University - 31/08/2024</p>
+                            <p>Cybersecurity Introduction <br><br> Cisco Networking Academy - 19/11/2023</p>
                             <div class="redessociales">
                                 <ul>
-                                    <li><a href="../documentos/CS50x.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                    <li><a href="../documentos/AntonioPerales-Introducción a l-certificate (1).pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
                                 </ul>
                             </div>
                         </div>
+                    
                         <div class="curso-MC">
-                            <p> CS50's Introduction to Databases with SQL <br><br>Harvard University - 03/09/2024</p>
+                            <p>JavaScript Essentials 1 (JSE) <br><br> JavaScript Institute (Cisco Networking Academy) - 27/12/2023</p>
                             <div class="redessociales">
                                 <ul>
-                                    <li><a href="../documentos/CS50 SQL.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                    <li><a href="../documentos/AntonioPerales-Curso básico de -certificate.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
                                 </ul>
                             </div>
                         </div>
-                </div>
-
-                <div class="cbm">
-                    <h4>Agencia Estatal de Seguridad Área (AESA)</h4>
+                    
                         <div class="curso-MC">
-                            <p> Distance pilot course in open category, subcategories A1/A3 <br><br>AESA - 07/11/2024</p>
+                            <p>Cybersecurity Essentials <br><br> Cisco Networking Academy - 31/12/2023</p>
+                            <div class="redessociales">
+                                <ul>
+                                    <li><a href="../documentos/AntonioPerales-Continuación a l-certificate.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                </ul>
+                            </div>
                         </div>
-                </div>      
-        </div>
-        
-        <!--Proyects-->
-        <div class="proyectos" id="proyecto">
-            <h3 class="h3">My projects</h3>
-            <div class="cartas">
-                <div class="contorno1">
-                    <div class="carta">
-                        <div class="medio">
-                            <div class="cara1" style="background-image: url(../imagenes/logo.png);" draggable="false"></div>
-                            <div class="cara2">
-                                <h4>ElHamiti News</h4>
-                                <h5>What is it?</h5>
-                                <p>Final Project for Network Operating Systems Administration (ASIR)</p>
-                                <h5>Why was the project created?</h5>
-                                <p>The company ElHamiti News aims to provide informational services in the field of computing, covering areas such as cybersecurity, hardware, programming, and artificial intelligence, among others, targeting interested audiences.</p>
-                                <h5>Collaborators:</h5>
-                                <p><a href="https://www.linkedin.com/in/felipegim%C3%A9nezmart%C3%ADnez/">Felipe Giménez Martínez</a><br><a href="https://www.linkedin.com/in/diego-alfonso-chicoma-iba%C3%B1ez-5721ba228/">Diego Alfonso Chicoma Ibáñez</a><br><a href="https://www.linkedin.com/in/jos%C3%ADas-gonz%C3%A1lez-rubio-31306a272/">Josías González Rubio</a></p>
+                    
+                        <div class="curso-MC">
+                            <p>NDG Linux Essentials <br><br> NDG (Cisco Networking Academy) - 28/06/2024</p>
+                            <div class="redessociales">
+                                <ul>
+                                    <li><a href="../documentos/AntonioPerales-NDG Linux Essent-certificate.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cbm">
+                        <h4>Microsoft Learn</h4>
+                        <div class="curso-MC">
+                            <p>Implementation, Configuration, and Administration of Windows Server <br><br> Microsoft Learn - 26/09/2023</p>
+                            <div class="redessociales">
+                                <ul>
+                                    <li><a href="../documentos/Logros - antonioperales-9962 _ Microsoft Learn.PDF" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cbm">    
+                        <h4>Backtrack Academy</h4>
+                        <div class="curso-MC">
+                            <p>Vulnerability Exploitation <br><br> Backtrack Academy - 04/01/2023</p>
+                            <div class="redessociales">
+                                <ul>
+                                    <li><a href="../documentos/pdf_exam.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cbm">    
+                        <h4>Santander Open Academy</h4>
+                        <div class="curso-MC">
+                            <p> Basic Knowledge of Python<br><br> Santander Open Academy - 13/08/2024</p>
+                            <div class="redessociales">
+                                <ul>
+                                    <li><a href="../documentos/python.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="curso-MC">
+                            <p>Introduction to Data Science <br><br> Santander Open Academy - 13/08/2024<br><br>In association with: IE University</p>
+                            <div class="redessociales">
+                                <ul>
+                                    <li><a href="../documentos/ciencia_datos.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="curso-MC">
+                            <p>Internet of Things <br><br> Santander Open Academy - 13/08/2024<br><br>In association with: MIT Professional Education</p>
+                            <div class="redessociales">
+                                <ul>
+                                    <li><a href="../documentos/iot.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="curso-MC">
+                            <p>Copilot <br><br>Santander Open Academy - 13/08/2024<br><br>In association with: Microsoft</p>
+                            <div class="redessociales">
+                                <ul>
+                                    <li><a href="../documentos/copilot.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="curso-MC">
+                            <p>Digital Transformation <br><br>Santander Open Academy - 13/08/2024<br><br>In association with: MIT Professional Education</p>
+                            <div class="redessociales">
+                                <ul>
+                                    <li><a href="../documentos/transformacion_digital_santander.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="curso-MC">
+                            <p>Google: Artificial Intelligence and productivity <br><br>Santander Open Academy - 13/08/2024<br><br>In association with: Google</p>
+                            <div class="redessociales">
+                                <ul>
+                                    <li id="proyectos"><a href="../documentos/google.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbm">
+                        <h4>Harvard University (edX)</h4>
+                            <div class="curso-MC">
+                                <p>CS50's Introduction to Computer Science<br><br>Harvard University - 31/08/2024</p>
                                 <div class="redessociales">
                                     <ul>
-                                        <li><a href="../documentos/Grupo05_Memoria_ElHamitiNews.pdf" class="download"><i class="fa fa-file-download"></i></a></li>
-                                        <li><a href="https://github.com/MrRobot4042212/El-Hamiti-News.github.io.git" class="twitter"><i class="fab fa-github"></i></a></li>
+                                        <li><a href="../documentos/CS50x.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contorno2">
-                    <div class="carta">
-                        <div class="medio">
-                            <div class="cara1" style="background-image: url(../imagenes/tucan.png);" draggable="false"></div>
-                            <div class="cara2">
-                                <h4>Impr3Dsion:</h4>
-                                    <h5>What is it?</h5>
-                                        <p>Project created for the subject of Business and Entrepreneurial Initiative in the 2nd year of Network Operating Systems Administration</p>
-                                    <h5>Why was the project created?</h5>
-                                        <p>Impr3Dsion is a company specialized in 3D printing and modeling. As indicated in the company's slogan, “TUCÁN DO IT!”, it reflects the ability to realize any idea of its customers. 
-                                        Impr3Dsion is committed to sustainability, promoting eco-friendly materials to reduce plastic use and contribute to a more sustainable environment.</p>
-                                    <h5>Collaborators:</h5>
-                                        <p><a href="https://www.linkedin.com/in/ignacio-ajuria-olave-62164b235/">Ignacio Ajuria Olave</a><br><a href="https://www.linkedin.com/in/javier-ortega-mart%C3%ADnez-1b8913192/">Javier Ortega Martínez</a><br><a href="https://www.linkedin.com/in/felipegim%C3%A9nezmart%C3%ADnez/">Felipe Giménez Martínez</a><br><a href="https://www.linkedin.com/in/jos%C3%ADas-gonz%C3%A1lez-rubio-31306a272/">Josías González Rubio</a></p>
-                                        <div class="redessociales">
-                                            <ul>
-                                                <li><a href="../documentos/PLAN EMPRESA_Impr3dsion.pdf" class="download"><i class="fa-solid fa-file-pdf"></i></a></li>
-                                                <li><a href="../documentos/Presentación_Impr3Dsion.pdf" class="youtube"><i class="fa-solid fa-file-powerpoint"></i></a></li>
-                                                <li><a href="../documentos/Modelo Canvas_Impr3Dsion.pdf" class="poster"><i class="fa-solid fa-signs-post"></i></a></li>
-                                            </ul>        
-                                        </div>
+                            <div class="curso-MC">
+                                <p> CS50's Introduction to Databases with SQL <br><br>Harvard University - 03/09/2024</p>
+                                <div class="redessociales">
+                                    <ul>
+                                        <li><a href="../documentos/CS50 SQL.pdf" class="certificado"><i class="fa-solid fa-stamp"></i></a></li>            
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
                     </div>
-                </div>
 
-                <div class="contorno3">
-                    <div class="carta">
-                        <div class="medio">
-                            <div class="cara1" style="background-image: url(../imagenes/tucan.png);" draggable="false"></div>
-                            <div class="cara2">
-                                <h4>CineRoadMap:</h4>
-                                    <h5>What is it?</h5>
-                                        <p>Project created for the subject of Business and Entrepreneurial Initiative in the 2nd year of Network Operating Systems Administration</p>
-                                    <h5>Why was the project created?</h5>
-                                        <p>Impr3Dsion is a company specialized in 3D printing and modeling. As indicated in the company's slogan, “TUCÁN DO IT!”, it reflects the ability to realize any idea of its customers. 
-                                        Impr3Dsion is committed to sustainability, promoting eco-friendly materials to reduce plastic use and contribute to a more sustainable environment.</p>
-                                    <h5>Collaborators:</h5>
-                                        <p><a href="https://www.linkedin.com/in/felipegim%C3%A9nezmart%C3%ADnez/">Felipe Gimenez Martínez</a><br><a href="https://www.linkedin.com/in/alberto-carracelas-858133245/">Alberto Carracelas Vega</a><br><a href="#">Santiago López Matas</a></p>
-                                        <div class="redessociales">
-                                            <ul>
-                                                <li><a href="../documentos/PLAN EMPRESA_Impr3dsion.pdf" class="download"><i class="fa-solid fa-file-pdf"></i></a></li>
-                                                <li><a href="../documentos/Presentación_Impr3Dsion.pdf" class="youtube"><i class="fa-solid fa-file-powerpoint"></i></a></li>
-                                                <li><a href="../documentos/Modelo Canvas_Impr3Dsion.pdf" class="poster"><i class="fa-solid fa-signs-post"></i></a></li>
-                                            </ul>        
-                                        </div>
+                    <div class="cbm">
+                        <h4>Agencia Estatal de Seguridad Área (AESA)</h4>
+                            <div class="curso-MC">
+                                <p> Distance pilot course in open category, subcategories A1/A3 <br><br>AESA - 07/11/2024</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
+                    </div>      
             </div>
-        </div>
-    </main>
+            
+            <!--Proyects-->
+            <div class="proyectos" id="proyecto">
+                <h3 class="h3">My projects</h3>
+                <div class="cartas">
+
+                    <div class="contorno1">
+                        <div class="carta">
+                            <div class="medio">
+                                <div class="cara1" style="background-image: url(../imagenes/logo.png);" draggable="false"></div>
+                                <div class="cara2">
+                                    <h4>ElHamiti News</h4>
+                                        <h5>What is it?</h5>
+                                            <p>Final Project for Network Operating Systems Administration (ASIR)</p>
+                                        <h5>Why was the project created?</h5>
+                                            <p>The company ElHamiti News aims to provide informational services in the field of computing, covering areas such as cybersecurity, hardware, programming, and artificial intelligence, among others, targeting interested audiences.</p>
+                                        <h5>Collaborators:</h5>
+                                            <p><a href="https://www.linkedin.com/in/felipegim%C3%A9nezmart%C3%ADnez/">Felipe Giménez Martínez</a><br><a href="https://www.linkedin.com/in/diego-alfonso-chicoma-iba%C3%B1ez-5721ba228/">Diego Alfonso Chicoma Ibáñez</a><br><a href="https://www.linkedin.com/in/jos%C3%ADas-gonz%C3%A1lez-rubio-31306a272/">Josías González Rubio</a></p>
+                                        <div class="redessociales">
+                                            <ul>
+                                                <li><a href="../documentos/Grupo05_Memoria_ElHamitiNews.pdf" class="download"><i class="fa fa-file-download"></i></a></li>
+                                                <li><a href="https://github.com/MrRobot4042212/El-Hamiti-News.github.io.git" class="twitter"><i class="fab fa-github"></i></a></li>
+                                            </ul>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contorno2">
+                        <div class="carta">
+                            <div class="medio">
+                                <div class="cara1" style="background-image: url(../imagenes/tucan.png);" draggable="false"></div>
+                                <div class="cara2">
+                                    <h4>Impr3Dsion:</h4>
+                                        <h5>What is it?</h5>
+                                            <p>Project created for the subject of Business and Entrepreneurial Initiative in the 2nd year of Network Operating Systems Administration</p>
+                                        <h5>Why was the project created?</h5>
+                                            <p>Impr3Dsion is a company specialized in 3D printing and modeling. As indicated in the company's slogan, “TUCÁN DO IT!”, it reflects the ability to realize any idea of its customers. 
+                                            Impr3Dsion is committed to sustainability, promoting eco-friendly materials to reduce plastic use and contribute to a more sustainable environment.</p>
+                                        <h5>Collaborators:</h5>
+                                            <p><a href="https://www.linkedin.com/in/ignacio-ajuria-olave-62164b235/">Ignacio Ajuria Olave</a><br><a href="https://www.linkedin.com/in/javier-ortega-mart%C3%ADnez-1b8913192/">Javier Ortega Martínez</a><br><a href="https://www.linkedin.com/in/felipegim%C3%A9nezmart%C3%ADnez/">Felipe Giménez Martínez</a><br><a href="https://www.linkedin.com/in/jos%C3%ADas-gonz%C3%A1lez-rubio-31306a272/">Josías González Rubio</a></p>
+                                        <div class="redessociales">
+                                            <ul>
+                                                <li><a href="../documentos/PLAN EMPRESA_Impr3dsion.pdf" class="download"><i class="fa-solid fa-file-pdf"></i></a></li>
+                                                <li><a href="../documentos/Presentación_Impr3Dsion.pdf" class="youtube"><i class="fa-solid fa-file-powerpoint"></i></a></li>
+                                                <li><a href="../documentos/Modelo Canvas_Impr3Dsion.pdf" class="poster"><i class="fa-solid fa-signs-post"></i></a></li>
+                                            </ul>        
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contorno3">
+                        <div class="carta">
+                            <div class="medio">
+                                <div class="cara1" style="background-image: url(../imagenes/CineRoadMap.jpg);" draggable="false"></div>
+                                <div class="cara2">
+                                    <h4>CineRoadMap:</h4>
+                                        <h5>What is it?</h5>
+                                            <p>Project developed for the subjects of Engineering Project, Computer Science Project I, and Computer Science Project II.</p>
+                                        <h5>Why was the project created?</h5>
+                                            <p>CineRoadmap is a platform designed for any movie lover to keep track of the films they’ve watched throughout their life, unlock achievements, and complete challenges. The goal is to encourage users to discover new movies through a gamified system inspired by video games..</p>
+                                        <h5>Collaborators:</h5>
+                                            <p><a href="https://www.linkedin.com/in/felipegim%C3%A9nezmart%C3%ADnez/">Felipe Gimenez Martínez</a><br><a href="https://www.linkedin.com/in/alberto-carracelas-858133245/">Alberto Carracelas Vega</a><br>Santiago López Matas</p>
+                                        <div class="redessociales">
+                                            <ul>
+                                                <li><a href="https://drive.google.com/drive/folders/10sPDD7jdo7zm5KWfpn5hrEBmsZWbG8KF?usp=sharing" class="download"><i class="fa-brands fa-google-drive"></i></a></li>
+                                            </ul>        
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
         <!--Footer-->
         <footer class="footer">
@@ -651,8 +660,8 @@
             </div>
         </footer>
 
-    <!--JS-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../js/index.js"></script>
-</body>
+        <!--JS-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="../js/index.js"></script>
+    </body>
 </html>
