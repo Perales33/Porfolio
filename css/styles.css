@@ -1173,10 +1173,12 @@ main {
 }
 
 @media (min-width: 1443px) {
-    .proyectos .cartas{
+    .proyectos .cartas
+    {
         text-align: center;
     }
-    .contorno1, .contorno2, .contorno3, .contorno4,.contorno5,.contorno6, .contorno7 {
+    .contorno1, .contorno2, .contorno3 
+    {
         margin-right: 100px;
     }
 }
@@ -1185,7 +1187,8 @@ main {
     .proyectos .cartas{
         text-align: center;
     }
-    .contorno1, .contorno2, .contorno3, .contorno4, .contorno5,.contorno6, .contorno7 {
+    .contorno1, .contorno2, .contorno3
+    {
         margin-right: 200px;
     }
 }
@@ -1193,7 +1196,8 @@ main {
     .cartas{
         text-align: center;
     }
-    .contorno1, .contorno2, .contorno3, .contorno4, .contorno5,.contorno6, .contorno7 {
+    .contorno1, .contorno2, .contorno3
+    {
         margin-right: 250px;
     }
 }
@@ -1202,7 +1206,8 @@ main {
     .cartas{
         text-align: center;
     }
-    .contorno1, .contorno2, .contorno3, .contorno4, .contorno5,.contorno6, .contorno7 {
+    .contorno1, .contorno2, .contorno3
+    {
         margin-right: 320px;
     }
 }
@@ -1213,25 +1218,18 @@ main {
     perspective: 2000px;
     
 }
-.contorno2 .cara1 {
+.contorno1 .cara1 {
     background-color:  #254267;
 }
 
-.contorno3 .cara1 {
+.contorno2 .cara1 {
     background-color:  #6fa419;
 }
 
-.contorno4 .cara1 {
+.contorno3 .cara1 {
     background-color:  #ffffff;
 }
-.contorno6 .cara1{
-    background-color: #ffcc00;
-}
 
-.contorno7 .cara1{
-    
-    background-color: #ffffff;
-}
 .cara1 {
     background-repeat: no-repeat;
     background-size: cover;
