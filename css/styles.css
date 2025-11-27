@@ -1102,6 +1102,11 @@ main {
     transform: scale(1.3);
 }
 
+.galeria #certiport1
+{
+    width: 800px;
+    height: 100px;
+}
 
 .cursos h4 {
     font-size: 20px;
